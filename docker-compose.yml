@@ -1,0 +1,8 @@
+version: '2'
+services:
+  nginx-proxy:
+    build: .
+    ports:
+      - "80:80"
+    volumes: 
+      - /var/run/docker.sock:/tmp/docker/.sock:ro
