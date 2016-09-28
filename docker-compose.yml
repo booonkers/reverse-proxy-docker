@@ -2,7 +2,7 @@ version: '2'
 services:
   nginx-proxy:
     image: jwilder/nginx-proxy
-    container_name: nginx-proxy
+    container_name: ${REVERSE_PROXY_CONTAINER_NAME}
     ports:
       - "80:80"
     volumes:
